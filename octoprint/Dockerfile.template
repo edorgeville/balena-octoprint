@@ -5,7 +5,9 @@ RUN install_packages curl
 RUN pip3 install OctoPrint==1.6.1
 
 RUN PYTHONUSERBASE=/usr/local/ pip install --no-cache-dir \
-    "https://github.com/kantlivelong/OctoPrint-PSUControl/archive/master.zip" \ 
+    "https://github.com/kantlivelong/OctoPrint-PSUControl/archive/master.zip" \
+    "https://github.com/SimplyPrint/OctoPrint-Creality2xTemperatureReportingFix/archive/master.zip" \
+    "https://github.com/OllisGit/OctoPrint-FilamentManager/archive/master.zip" \
     "https://github.com/marian42/octoprint-preheat/archive/master.zip" \
     "https://github.com/OllisGit/OctoPrint-DisplayLayerProgress/releases/latest/download/master.zip" \
     "https://github.com/malnvenshorn/OctoPrint-FilamentManager/archive/master.zip" \
